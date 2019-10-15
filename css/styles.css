@@ -1,0 +1,262 @@
+/* Global layout styles setup */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 3%;
+    
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+p {
+    font-size: 1.2em;
+}
+
+
+/* Main Nav */
+    /* .nav Targets The UL */
+   .nav {
+    display: block;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    list-style-type: none;
+    margin-top: 1.5rem;
+    padding: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+  } 
+  
+  /* myName title */
+  .myName {
+      display: block;
+      font-size: 2rem;
+      color: black;
+      text-align: center;
+      padding-top: 35px;
+  }
+  
+  .nav a {
+    transition: all .5s;
+  }
+
+  .nav a:hover {
+    color: rgb(212, 6, 6)
+  }
+
+
+    /* Portfolio header */
+
+    .mainH1 {
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    /* project cards  */
+
+    .projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+  
+    .Project h2, p{
+        text-align: center;
+    }
+
+    .contact h1 {
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 700;
+        padding-top: 50px;
+
+    }
+
+    .footer-nav {
+        display: none;
+    }
+     
+    .top {
+        padding-top: 16px;
+    }
+
+    .phone {
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+
+    .email {
+        font-weight: bold;
+    }
+
+    /* ========================================================== */
+                    /*  Media Query 678px*/
+    /* ========================================================== */
+
+
+    @media (min-width: 678px) {
+        .nav {
+            width: 355px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding: 1em;
+            
+          }
+
+          .nav a {
+            transition: all .5s;
+          }
+
+          .nav a:hover {
+            color: grey
+          
+          }
+
+          
+          .section1 {
+              display: flex;
+              flex-direction: row-reverse;
+              margin-top: 2.5em;
+          }
+          
+          .profilePic {
+              padding-top: 0;
+              width: 45%;
+              height: 100%;
+          }
+
+          .introText {
+              width: 55%;
+              padding-right: 25px;
+              text-align: left;
+              margin-top: 0;
+              font-size: 1.2em;
+          }
+
+          .projectContainer {
+              padding-left: 2em;
+          }
+
+          .Project {
+            float: left;
+            width: 45%;
+            margin: 0.5em;
+            
+          }
+
+          .Project :nth-child(even) {
+            margin-right: 6%;
+          }
+
+          .projectsText {
+            padding: 0 28px;
+          }
+
+          .contact {
+              max-width: 80%;
+              margin: auto;
+          }
+
+          .top {
+              display: none;
+          }
+
+          .footer-nav {
+            display: flex;
+          }
+
+          .footer-nav li {
+              padding-left: 25px;
+          }
+
+
+          
+
+          }
+        
+        /* ========================================================== */
+                    /*  Media Query 1024px*/
+        /* ========================================================== */
+          @media (min-width: 1024px) {
+            nav {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+
+            .nav {
+                margin: initial;                                
+                text-align: center;
+            }
+
+            nav a {
+                color:black
+            }
+
+            ul a:hover {
+                color: gray;
+            }
+
+            .myName {
+                font-size: 2em;
+                margin: 0;
+                padding-top: 0;
+                
+            }
+
+            .introText {
+              font-size: 1.3em;
+            }
+
+            .Project {
+                width:31%;
+                margin: 0.5em;
+                
+              }
+          }
+        
+
+
+
+        
+
+        
+    
+
+    
+    
+    
